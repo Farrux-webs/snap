@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -15,7 +16,7 @@
     <div class="container">
       <nav class="navbar">
         <ul class="menu">
-          <li class="list-item first-dropdown"><a href="#" class="page-links">Features</a>
+          <li class="list-item first-dropdown firstDropdownMobile"><a href="#" class="page-links">Features</a>
             <ul class="dropdown">
               <li><a href="#">Todo List</a></li>
               <li><a href="#">Calendar</a></li>
@@ -23,24 +24,25 @@
               <li><a href="#">Planning</a></li>
             </ul>
           </li>
-          <li class="list-item second-dropdown"><a href="#" class="page-links">Company</a>
+          <li class="list-item second-dropdown otherItems secondDropdownMobile"><a href="#" class="page-links">Company</a>
             <ul class="dropdown2">
               <li><a href="#">History</a></li>
               <li><a href="#">Our Team</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
           </li>
-          <li class="list-item"><a href="#" class="page-links">Careers</a></li>
-          <li class="list-item"><a href="#" class="page-links">About</a></li>
+          <li class="list-item otherItems"><a href="#" class="page-links">Careers</a></li>
+          <li class="list-item otherItems"><a href="#" class="page-links">About</a></li>
         </ul>
         <div class="btns">
           <button class="login">Login</button>
           <button class="register">Register</button>
         </div>
       </nav>
+      <i class="bi bi-list hamburger"></i>
     </div>
   </header>
-  <main>
+  <main class="main">
     <section class="hero">
       <div class="container heroWrapper">
         <div class="contents">
@@ -54,7 +56,11 @@
           <li><a href="#"><img src="./images/client-maker.svg" alt=""></a></li>
         </ul>
       </div>
-      <img src="./images/image-hero-desktop.png" width="480" height="600" alt="nigga">
+      <picture>
+        <source media="(max-width: 411px)" width="330" height="280" srcset="./images/image-hero-mobile.png">
+        <img src="./images/image-hero-desktop.png" width="480" height="600" alt="nigga">
+      </picture>
+      
     </div>
     </section>
   </main>
